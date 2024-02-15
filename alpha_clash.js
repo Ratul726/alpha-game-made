@@ -11,8 +11,16 @@
 // }
 
 function continueGame(){
+    // generate alphabet
     const alphabet = getARandomAlphabet();
-    console.log('your random alphabet',alphabet)
+    console.log('your random alphabet',alphabet);
+
+    // set alphabet
+
+    const currentAlphabeByElement = document.getElementById('current-alphabet');
+    currentAlphabeByElement.innerText =alphabet;
+    // addbackgroundcolor
+    addBackGroundcolor(alphabet)
 }
 
 

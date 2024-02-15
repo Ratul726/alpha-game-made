@@ -7,6 +7,15 @@ function showElementById(e){
     const el =document.getElementById(e);
     el.classList.remove('hidden')
 }
+function addBackGroundcolor(e){
+ const el = document.getElementById(e);
+ el.classList.add('bg-orange-600')
+}
+
+function removeBackGroundById(e){
+ const el =document.getElementById(e);
+ el.classList.remove('bg-orange-600')
+}
 
 function getARandomAlphabet(){
     // get or create an alphabet array
