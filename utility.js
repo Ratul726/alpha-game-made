@@ -22,7 +22,7 @@ function getARandomAlphabet(){
     const alphabetws = 'abcdefghijklmnopqrstuvwxyz'
     const string = alphabetws.split('')
     
-    // get a random 
+    // get a random number of an array
     const randomNumber =Math.random()*25
     const index =Math.round(randomNumber)
 // console.log(index)

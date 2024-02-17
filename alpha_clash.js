@@ -10,6 +10,23 @@
 //     playGroundSection.classList.remove('hidden')
 // }
 
+function handleKeyboardButtonPress(){
+    console.log('add button')
+}
+document.addEventListener('keyup',function(e){
+    const gamerPressed =e.key;
+    console.log('player pressed',gamerPressed);
+    const currentAlphabeByElement = document.getElementById('current-alphabet');
+    console.log(currentAlphabeByElement,innerText)
+
+    // ?get the expected to press
+    const currentAlphabetElement = document.getElementById('current-alphabet');
+    currentAlphabetElement.innerText = alphabet ;
+    const expectedAlphabet = currentAlphabet.toLowerCase()
+
+    console.log(gamerPressed)
+})
+
 function continueGame(){
     // generate alphabet
     const alphabet = getARandomAlphabet();

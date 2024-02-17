@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task</title>
+</head>
+<body>
+    <section class="btn-post">
+        <div class="hello">
+            <h1>Hello World!</h1>
+            
+            <div>
+                <button onclick="addJs(event)" class="btn">button</button>
+            </div> 
+        </div>  
+    </section>
+
+    <!-- <script src="pratices.js"></script> -->
+    <script>
+        function addJs(event){
+            console.log(event.target.parentNode.parentNode.childNodes[1].innerText);
+        }
+    </script>
+</body>
+</html>
+
+

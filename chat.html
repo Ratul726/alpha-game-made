@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>DOM Manipulation Example</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#content {
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+    </style>
+</head>
+<body>
+
+    <div id="content">
+        <h1>Hello, DOM!</h1>
+        <button id="changeColorBtn">Change Color</button>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    // Wait for the DOM to be fully loaded before executing JavaScript
+
+    var changeColorBtn = document.getElementById('changeColorBtn');
+    var contentDiv = document.getElementById('content');
+
+    changeColorBtn.addEventListener('click', function() {
+        // Change background color when the button is clicked
+        var randomColor = getRandomColor();
+        contentDiv.style.backgroundColor = randomColor;
+    });
+
+    function getRandomColor() {
+        // Generate a random hex color
+        var letters = '0123456789ABCDEF';
+        var color = '#';
+        for (var i = 0; i < 6; i++) {
+            color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+    }
+});
+
+    </script>
+</body>
+</html>
